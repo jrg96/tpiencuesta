@@ -67,6 +67,20 @@ class Evaluacion_model extends CI_Model {
 		return $query[0];
 	}
 	
+	public function obtener_datos_evaluacion2($id_evaluacion)
+	{
+		$condicion = array(
+			'tbl_evaluacion.id_evaluacion' => $id_evaluacion
+		);
+		
+		$this->db->select('*');
+        $this->db->from('tbl_evaluacion');
+		$this->db->where($condicion);
+		$query = $this->db->get()->result_array();
+		
+		return $query[0];
+	}
+	
 	public function modificar_datos_evaluacion($id_usuario, $id_evaluacion, $id_profesor, $id_materia, $nombre_evaluacion)
 	{
 		$datos = array(

@@ -31,11 +31,10 @@ class MostrarEvaluacion extends CI_Controller {
         }
 		
 		/////////////////////////// Variables a utilizar /////////////////////////
-		$id_usuario = $this->session->userdata('id_usuario');
 		$id_evaluacion = $id_evaluacion;
 		
 		/////////////////////////// Obtener datos DB /////////////////////////////
-		$evaluacion_datos = $this->Evaluacion_model->obtener_datos_evaluacion($id_usuario, $id_evaluacion);
+		$evaluacion_datos = $this->Evaluacion_model->obtener_datos_evaluacion2($id_evaluacion);
 		$secciones = $this->Seccion_model->obtener_seccion_evaluacion($id_evaluacion);
 		$arr_secciones_criterios = array();
 		

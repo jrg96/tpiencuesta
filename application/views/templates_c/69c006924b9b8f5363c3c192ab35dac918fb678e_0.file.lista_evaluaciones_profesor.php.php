@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-11-17 02:16:46
+/* Smarty version 3.1.30, created on 2017-11-28 04:04:07
   from "H:\tpi\USBWebserver v8.6\root\tpiencuesta\application\views\templates\lista_evaluaciones_profesor.php" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5a0e468e8febb7_88538350',
+  'unifunc' => 'content_5a1ce037075950_77748148',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '69c006924b9b8f5363c3c192ab35dac918fb678e' => 
     array (
       0 => 'H:\\tpi\\USBWebserver v8.6\\root\\tpiencuesta\\application\\views\\templates\\lista_evaluaciones_profesor.php',
-      1 => 1510881180,
+      1 => 1511840524,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5a0e468e8febb7_88538350 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a1ce037075950_77748148 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -51,8 +51,7 @@ font-awesome/css/font-awesome.min.css" rel="stylesheet">
 						<span class="icon-bar"></span>
 					</button>
 					<a class="navbar-left navbar-brand navbar-logo" href="index.html">
-						<img src="" alt="Dispute Bills">
-						<a class="navbar-brand font-big" href="#">MiEncuesta</a>
+						<a class="navbar-brand font-big" href="/tpiencuesta/index.php/inicio">Evaluacion profesores</a>
 					</a>
 		        </div>
 				
