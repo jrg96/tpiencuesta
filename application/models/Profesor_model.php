@@ -99,4 +99,9 @@ class Profesor_model extends CI_Model {
         }
         return false;
 	}
+	
+	public function eliminar_profesor($id_profesor)
+	{
+		$this->db->delete('tbl_profesor', array('id_profesor' => $id_profesor));
+	}
 }

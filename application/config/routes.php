@@ -65,3 +65,9 @@ $route['editarcriterio/index/(:any)/(:any)/(:any)'] = 'editarcriterio/index/$1/$
 $route['mostrarevaluacion/index/(:any)'] = 'mostrarevaluacion/index/$1';
 $route['vaciarevaluacion/index/(:any)'] = 'vaciarevaluacion/index/$1';
 $route['mostrarestadisticasevaluacion/index/(:any)'] = 'mostrarestadisticasevaluacion/index/$1';
+
+$route['eliminarprofesor/index/(:any)'] = 'eliminarprofesor/index/$1';
+$route['eliminarmateria/index/(:any)'] = 'eliminarmateria/index/$1';
+$route['eliminarmateriaprofesor/index/(:any)'] = 'eliminarmateriaprofesor/index/$1';
+$route['eliminarseccion/index/(:any)'] = 'eliminarseccion/index/$1';
+$route['eliminarcriterio/index/(:any)'] = 'eliminarcriterio/index/$1';

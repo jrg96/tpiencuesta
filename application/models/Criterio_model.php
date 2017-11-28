@@ -92,4 +92,9 @@ class Criterio_model extends CI_Model {
         }
         return false;
 	}
+	
+	public function eliminar_criterio($id_criterio_seccion)
+	{
+		$this->db->delete('tbl_criterio_seccion', array('id_criterio_seccion' => $id_criterio_seccion));
+	}
 }

@@ -88,4 +88,9 @@ class Seccion_model extends CI_Model {
         }
         return false;
 	}
+	
+	public function eliminar_seccion($id_seccion)
+	{
+		$this->db->delete('tbl_seccion_evaluacion', array('id_seccion_evaluacion' => $id_seccion));
+	}
 }

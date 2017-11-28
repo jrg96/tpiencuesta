@@ -23,8 +23,7 @@
 						<span class="icon-bar"></span>
 					</button>
 					<a class="navbar-left navbar-brand navbar-logo" href="index.html">
-						<img src="" alt="Dispute Bills">
-						<a class="navbar-brand font-big" href="#">MiEncuesta</a>
+						<a class="navbar-brand font-big" href="/tpiencuesta/index.php/inicio">Evaluacion profesores</a>
 					</a>
 		        </div>
 				
@@ -80,7 +79,7 @@
                                 <tr>
                                     <th><center>{$seccion.nombre_seccion}</center></th>
                                     <th><center><a href="/tpiencuesta/index.php/editarseccion/index/{$evaluacion.id_evaluacion}/{$seccion.id_seccion_evaluacion}">Modificar</a></center></th>
-                                    <th><center><a href="/sic115/index.php/">Eliminar</a></center></th>
+                                    <th><center><a href="/tpiencuesta/index.php/eliminarseccion/index/{$seccion.id_seccion_evaluacion}">Eliminar</a></center></th>
                                 </tr>
                                 {/foreach}
                             </tbody>
@@ -150,7 +149,7 @@
 								<th><center>{$criterio.minimo}</center></th>
 								<th><center>{$criterio.maximo}</center></th>
 								<th><center><a href="/tpiencuesta/index.php/editarcriterio/index/{$evaluacion.id_evaluacion}/{$seccion.seccion.id_seccion_evaluacion}/{$criterio.id_criterio_seccion}">Modificar</a></center></th>
-								<th><center><a href="/sic115/index.php/">Eliminar</a></center></th>
+								<th><center><a href="/tpiencuesta/index.php/eliminarcriterio/index/{$criterio.id_criterio_seccion}">Eliminar</a></center></th>
 							</tr>
 							{/foreach}
 						</tbody>

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-11-16 21:30:25
+/* Smarty version 3.1.30, created on 2017-11-28 03:16:21
   from "H:\tpi\USBWebserver v8.6\root\tpiencuesta\application\views\templates\editar_contenido_evaluacion.php" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5a0e0371753f03_93902985',
+  'unifunc' => 'content_5a1cd505a41612_31469280',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6dd9a2a3e0234da15e52640f97f1c4a9d99c0eb8' => 
     array (
       0 => 'H:\\tpi\\USBWebserver v8.6\\root\\tpiencuesta\\application\\views\\templates\\editar_contenido_evaluacion.php',
-      1 => 1510867824,
+      1 => 1511838964,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5a0e0371753f03_93902985 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a1cd505a41612_31469280 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -118,7 +118,8 @@ foreach ($_from as $_smarty_tpl->tpl_vars['seccion']->value) {
                                     <th><center><a href="/tpiencuesta/index.php/editarseccion/index/<?php echo $_smarty_tpl->tpl_vars['evaluacion']->value['id_evaluacion'];?>
 /<?php echo $_smarty_tpl->tpl_vars['seccion']->value['id_seccion_evaluacion'];?>
 ">Modificar</a></center></th>
-                                    <th><center><a href="/sic115/index.php/">Eliminar</a></center></th>
+                                    <th><center><a href="/tpiencuesta/index.php/eliminarseccion/index/<?php echo $_smarty_tpl->tpl_vars['seccion']->value['id_seccion_evaluacion'];?>
+">Eliminar</a></center></th>
                                 </tr>
                                 <?php
 }
@@ -220,7 +221,8 @@ foreach ($_from as $_smarty_tpl->tpl_vars['criterio']->value) {
 /<?php echo $_smarty_tpl->tpl_vars['seccion']->value['seccion']['id_seccion_evaluacion'];?>
 /<?php echo $_smarty_tpl->tpl_vars['criterio']->value['id_criterio_seccion'];?>
 ">Modificar</a></center></th>
-								<th><center><a href="/sic115/index.php/">Eliminar</a></center></th>
+								<th><center><a href="/tpiencuesta/index.php/eliminarcriterio/index/<?php echo $_smarty_tpl->tpl_vars['criterio']->value['id_criterio_seccion'];?>
+">Eliminar</a></center></th>
 							</tr>
 							<?php
 }

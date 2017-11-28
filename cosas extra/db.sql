@@ -13,23 +13,23 @@ CREATE TABLE tbl_profesor(
 	id_usuario INT NOT NULL,
 	nombre_profesor VARCHAR(100),
 	carrera_profesor VARCHAR(100),
-	FOREIGN KEY (id_usuario) REFERENCES tbl_usuario(id_usuario)
+	FOREIGN KEY (id_usuario) REFERENCES tbl_usuario(id_usuario) ON DELETE CASCADE
 );
 
 CREATE TABLE tbl_materia(
 	id_materia INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
 	id_usuario INT NOT NULL,
-	codigo_materia VARCHAR(10) UNIQUE,
+	codigo_materia VARCHAR(10),
 	nombre_materia VARCHAR(100),
-	FOREIGN KEY (id_usuario) REFERENCES tbl_usuario(id_usuario)
+	FOREIGN KEY (id_usuario) REFERENCES tbl_usuario(id_usuario) ON DELETE CASCADE
 );
 
 CREATE TABLE tbl_detalle_materia_profesor(
 	id_detalle_materia_profesor  INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
 	id_profesor INT NOT NULL,
 	id_materia INT NOT NULL,
-	FOREIGN KEY (id_profesor) REFERENCES tbl_profesor(id_profesor),
-	FOREIGN KEY (id_materia) REFERENCES tbl_materia(id_materia)
+	FOREIGN KEY (id_profesor) REFERENCES tbl_profesor(id_profesor) ON DELETE CASCADE,
+	FOREIGN KEY (id_materia) REFERENCES tbl_materia(id_materia) ON DELETE CASCADE
 );
 
 CREATE TABLE tbl_evaluacion(
@@ -39,9 +39,9 @@ CREATE TABLE tbl_evaluacion(
 	id_materia INT NOT NULL,
 	nombre_evaluacion VARCHAR(200),
 	fecha_creacion DATETIME,
-	FOREIGN KEY (id_usuario) REFERENCES tbl_usuario(id_usuario),
-	FOREIGN KEY (id_profesor) REFERENCES tbl_profesor(id_profesor),
-	FOREIGN KEY (id_materia) REFERENCES tbl_materia(id_materia)
+	FOREIGN KEY (id_usuario) REFERENCES tbl_usuario(id_usuario) ON DELETE CASCADE,
+	FOREIGN KEY (id_profesor) REFERENCES tbl_profesor(id_profesor) ON DELETE CASCADE,
+	FOREIGN KEY (id_materia) REFERENCES tbl_materia(id_materia) ON DELETE CASCADE
 );
 
 CREATE TABLE tbl_seccion_evaluacion(
@@ -49,7 +49,7 @@ CREATE TABLE tbl_seccion_evaluacion(
 	id_evaluacion INT NOT NULL,
 	nombre_seccion VARCHAR(150),
 	fecha_creacion DATETIME,
-	FOREIGN KEY (id_evaluacion) REFERENCES tbl_evaluacion(id_evaluacion)
+	FOREIGN KEY (id_evaluacion) REFERENCES tbl_evaluacion(id_evaluacion) ON DELETE CASCADE
 );
 
 CREATE TABLE tbl_criterio_seccion(
@@ -59,14 +59,14 @@ CREATE TABLE tbl_criterio_seccion(
 	fecha_creacion DATETIME,
 	minimo INT NOT NULL,
 	maximo INT NOT NULL,
-	FOREIGN KEY (id_seccion_evaluacion) REFERENCES tbl_seccion_evaluacion(id_seccion_evaluacion)
+	FOREIGN KEY (id_seccion_evaluacion) REFERENCES tbl_seccion_evaluacion(id_seccion_evaluacion) ON DELETE CASCADE
 );
 
 CREATE TABLE tbl_respuesta_evaluacion(
 	id_respuesta_evaluacion INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
 	id_evaluacion INT NOT NULL,
 	fecha_creacion DATETIME,
-	FOREIGN KEY (id_evaluacion) REFERENCES tbl_evaluacion(id_evaluacion)
+	FOREIGN KEY (id_evaluacion) REFERENCES tbl_evaluacion(id_evaluacion) ON DELETE CASCADE
 );
 
 CREATE TABLE tbl_respuesta_criterio(
@@ -75,7 +75,7 @@ CREATE TABLE tbl_respuesta_criterio(
 	id_seccion_evaluacion INT NOT NULL,
 	id_criterio_seccion INT NOT NULL,
 	valor INT NOT NULL,
-	FOREIGN KEY (id_respuesta_evaluacion) REFERENCES tbl_respuesta_evaluacion(id_respuesta_evaluacion),
-	FOREIGN KEY (id_seccion_evaluacion) REFERENCES tbl_seccion_evaluacion(id_seccion_evaluacion),
-	FOREIGN KEY (id_criterio_seccion) REFERENCES tbl_criterio_seccion(id_criterio_seccion)
+	FOREIGN KEY (id_respuesta_evaluacion) REFERENCES tbl_respuesta_evaluacion(id_respuesta_evaluacion) ON DELETE CASCADE,
+	FOREIGN KEY (id_seccion_evaluacion) REFERENCES tbl_seccion_evaluacion(id_seccion_evaluacion) ON DELETE CASCADE,
+	FOREIGN KEY (id_criterio_seccion) REFERENCES tbl_criterio_seccion(id_criterio_seccion) ON DELETE CASCADE
 );

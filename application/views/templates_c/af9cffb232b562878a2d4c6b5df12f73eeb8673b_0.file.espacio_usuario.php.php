@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-11-16 04:07:44
+/* Smarty version 3.1.30, created on 2017-11-28 02:43:27
   from "H:\tpi\USBWebserver v8.6\root\tpiencuesta\application\views\templates\espacio_usuario.php" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5a0d0f1010c819_10189564',
+  'unifunc' => 'content_5a1ccd4f1dbe06_26472646',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'af9cffb232b562878a2d4c6b5df12f73eeb8673b' => 
     array (
       0 => 'H:\\tpi\\USBWebserver v8.6\\root\\tpiencuesta\\application\\views\\templates\\espacio_usuario.php',
-      1 => 1510805262,
+      1 => 1511837006,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5a0d0f1010c819_10189564 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a1ccd4f1dbe06_26472646 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -131,8 +131,9 @@ foreach ($_from as $_smarty_tpl->tpl_vars['profesor']->value) {
                                     <a href="/tpiencuesta/index.php/listaevaluaciones/index/<?php echo $_smarty_tpl->tpl_vars['profesor']->value['id_profesor'];?>
 " class="btn btn-success btn-block btn-lg no-rounded-corner">Ver evaluaciones</a>
                                 </div>
-                                <div class="col-sm-4 side-padding-zero">
-                                    <a href="/miencuesta/miespacio/editar-contenido/" class="btn btn-warning btn-block btn-lg no-rounded-corner">Editar Contenido</a>
+								<div class="col-sm-4 side-padding-zero">
+                                    <a href="/tpiencuesta/index.php/eliminarprofesor/index/<?php echo $_smarty_tpl->tpl_vars['profesor']->value['id_profesor'];?>
+" class="btn btn-warning btn-block btn-lg no-rounded-corner">Eliminar profesor</a>
                                 </div>
                             </div>
                         </div>

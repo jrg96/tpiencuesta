@@ -1,3 +1,27 @@
+<?php
+/* Smarty version 3.1.30, created on 2017-11-27 05:41:39
+  from "H:\tpi\USBWebserver v8.6\root\tpiencuesta\application\views\templates\crear_profesor.php" */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.30',
+  'unifunc' => 'content_5a1ba593b1a0a3_74313671',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '6f0e63031ffa9a3a0d73970557d5ba7f7618992f' => 
+    array (
+      0 => 'H:\\tpi\\USBWebserver v8.6\\root\\tpiencuesta\\application\\views\\templates\\crear_profesor.php',
+      1 => 1510783406,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_5a1ba593b1a0a3_74313671 (Smarty_Internal_Template $_smarty_tpl) {
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -6,9 +30,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Crear cuenta</title>
-        <link href="{$base_url}bootstrap/css/bootstrap.css" rel="stylesheet">
-		<link href="{$base_url}css/style.css" rel="stylesheet">
-		<link href="{$base_url}font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
+bootstrap/css/bootstrap.css" rel="stylesheet">
+		<link href="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
+css/style.css" rel="stylesheet">
+		<link href="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
+font-awesome/css/font-awesome.min.css" rel="stylesheet">
     </head>
 
     <body>
@@ -23,7 +50,8 @@
 						<span class="icon-bar"></span>
 					</button>
 					<a class="navbar-left navbar-brand navbar-logo" href="index.html">
-						<a class="navbar-brand font-big" href="/tpiencuesta/index.php/inicio">Evaluacion profesores</a>
+						<img src="" alt="Dispute Bills">
+						<a class="navbar-brand font-big" href="#">MiEncuesta</a>
 					</a>
 		        </div>
 				
@@ -44,11 +72,13 @@
             <br />
             <br />
             
-            {if $resultado_operacion neq 'ninguna'}
+            <?php if ($_smarty_tpl->tpl_vars['resultado_operacion']->value != 'ninguna') {?>
             <div class="alert alert-success">
-                <strong>{$resultado_operacion}</strong> {$mensaje_operacion}
+                <strong><?php echo $_smarty_tpl->tpl_vars['resultado_operacion']->value;?>
+</strong> <?php echo $_smarty_tpl->tpl_vars['mensaje_operacion']->value;?>
+
             </div>
-            {/if}
+            <?php }?>
             
             <form action="/tpiencuesta/index.php/crearprofesor/procesar" method="POST">
                 <input type="hidden" name="es_desinversion" id="es_desinversion" value="off">
@@ -77,7 +107,14 @@
         <!-- Bootstrap core JavaScript
 		================================================== -->
 		<!-- Placed at the end of the document so the pages load faster -->
-		<script src="{$base_url}js/jquery-3.2.1.min.js"></script>
-		<script src="{$base_url}bootstrap/js/bootstrap.js"></script>
+		<?php echo '<script'; ?>
+ src="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
+js/jquery-3.2.1.min.js"><?php echo '</script'; ?>
+>
+		<?php echo '<script'; ?>
+ src="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
+bootstrap/js/bootstrap.js"><?php echo '</script'; ?>
+>
     </body>
-</html>
+</html><?php }
+}

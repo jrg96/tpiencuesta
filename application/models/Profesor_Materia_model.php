@@ -57,4 +57,9 @@ class Profesor_Materia_model extends CI_Model {
 		}
 		return false;
 	}
+	
+	public function eliminar_profesor_materia($id_detalle_materia_profesor)
+	{
+		$this->db->delete('tbl_detalle_materia_profesor', array('id_detalle_materia_profesor' => $id_detalle_materia_profesor));
+	}
 }

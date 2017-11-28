@@ -43,6 +43,7 @@ class ListaMaterias extends CI_Controller {
             'mensaje_operacion' => $mensaje_operacion,
 			'materias' => $materias
         ));
+		
         $this->smarty->view('lista_materias.php');
     }
 }

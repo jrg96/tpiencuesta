@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-11-17 15:56:54
+/* Smarty version 3.1.30, created on 2017-11-28 02:34:41
   from "H:\tpi\USBWebserver v8.6\root\tpiencuesta\application\views\templates\registro.php" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5a0f06c685bef0_64864455',
+  'unifunc' => 'content_5a1ccb4156e111_09741790',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '469deda387718dffd63e2f1b237ba6ef7a61d16d' => 
     array (
       0 => 'H:\\tpi\\USBWebserver v8.6\\root\\tpiencuesta\\application\\views\\templates\\registro.php',
-      1 => 1510779536,
+      1 => 1511836480,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5a0f06c685bef0_64864455 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a1ccb4156e111_09741790 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -59,7 +59,7 @@ font-awesome/css/font-awesome.min.css" rel="stylesheet">
 				<div id="navbar1" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav navbar-right">
 						<li class="active"><a class="font-big" href="/tpiencuesta/index.php/inicio">Inicio</a></li>
-						<li><a class="font-big" href="/miencuesta/login">Iniciar sesión</a></li>
+						<li><a class="font-big" href="/tpiencuesta/index.php/login">Iniciar sesión</a></li>
 					</ul>
 				</div>
 				<!--/.nav-collapse -->

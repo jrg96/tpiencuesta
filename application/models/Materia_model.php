@@ -99,4 +99,9 @@ class Materia_model extends CI_Model {
         }
         return false;
 	}
+	
+	public function eliminar_materia($id_materia)
+	{
+		$this->db->delete('tbl_materia', array('id_materia' => $id_materia));
+	}
 }

@@ -24,15 +24,14 @@
 						<span class="icon-bar"></span>
 					</button>
 					<a class="navbar-left navbar-brand navbar-logo" href="index.html">
-						<img src="" alt="Dispute Bills">
-						<a class="navbar-brand font-big" href="#">MiEncuesta</a>
+						<a class="navbar-brand font-big" href="/tpiencuesta/index.php/inicio">Evaluacion profesores</a>
 					</a>
 		        </div>
 				
 				<div id="navbar1" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav navbar-right">
 						<li class="active"><a class="font-big" href="/tpiencuesta/index.php/inicio">Inicio</a></li>
-						<li><a class="font-big" href="/miencuesta/login">Iniciar sesión</a></li>
+						<li><a class="font-big" href="/tpiencuesta/index.php/login">Iniciar sesión</a></li>
 					</ul>
 				</div>
 				<!--/.nav-collapse -->

@@ -23,8 +23,7 @@
 						<span class="icon-bar"></span>
 					</button>
 					<a class="navbar-left navbar-brand navbar-logo" href="index.html">
-						<img src="" alt="Dispute Bills">
-						<a class="navbar-brand font-big" href="#">MiEncuesta</a>
+						<a class="navbar-brand font-big" href="/tpiencuesta/index.php/inicio">Evaluacion profesores</a>
 					</a>
 		        </div>
 				
@@ -106,7 +105,7 @@
                                 <tr>
                                     <th><center>{$materia.codigo_materia}</center></th>
                                     <th><center>{$materia.nombre_materia}</center></th>
-                                    <th><center><a href="/sic115/index.php/">Eliminar</a></center></th>
+                                    <th><center><a href="/tpiencuesta/index.php/eliminarmateriaprofesor/index/{$materia.id_detalle_materia_profesor}">Eliminar</a></center></th>
                                 </tr>
                                 {/foreach}
                             </tbody>

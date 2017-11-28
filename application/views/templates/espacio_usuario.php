@@ -24,8 +24,7 @@
 						<span class="icon-bar"></span>
 					</button>
 					<a class="navbar-left navbar-brand navbar-logo" href="index.html">
-						<img src="" alt="Dispute Bills">
-						<a class="navbar-brand font-big" href="#">MiEncuesta</a>
+						<a class="navbar-brand font-big" href="/tpiencuesta/index.php/inicio">Evaluacion profesores</a>
 					</a>
 		        </div>
 				
@@ -94,8 +93,8 @@
                                 <div class="col-sm-4 side-padding-zero">
                                     <a href="/tpiencuesta/index.php/listaevaluaciones/index/{$profesor.id_profesor}" class="btn btn-success btn-block btn-lg no-rounded-corner">Ver evaluaciones</a>
                                 </div>
-                                <div class="col-sm-4 side-padding-zero">
-                                    <a href="/miencuesta/miespacio/editar-contenido/" class="btn btn-warning btn-block btn-lg no-rounded-corner">Editar Contenido</a>
+								<div class="col-sm-4 side-padding-zero">
+                                    <a href="/tpiencuesta/index.php/eliminarprofesor/index/{$profesor.id_profesor}" class="btn btn-warning btn-block btn-lg no-rounded-corner">Eliminar profesor</a>
                                 </div>
                             </div>
                         </div>

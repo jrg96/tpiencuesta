@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-11-16 03:38:44
+/* Smarty version 3.1.30, created on 2017-11-28 02:58:25
   from "H:\tpi\USBWebserver v8.6\root\tpiencuesta\application\views\templates\editar_profesor.php" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5a0d0844ef55e4_77799640',
+  'unifunc' => 'content_5a1cd0d14c8d30_15392621',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '598ea932ea044d4af8a7b74e96d1bba3cd708c3a' => 
     array (
       0 => 'H:\\tpi\\USBWebserver v8.6\\root\\tpiencuesta\\application\\views\\templates\\editar_profesor.php',
-      1 => 1510803524,
+      1 => 1511837902,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5a0d0844ef55e4_77799640 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a1cd0d14c8d30_15392621 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -157,7 +157,8 @@ foreach ($_from as $_smarty_tpl->tpl_vars['materia']->value) {
 </center></th>
                                     <th><center><?php echo $_smarty_tpl->tpl_vars['materia']->value['nombre_materia'];?>
 </center></th>
-                                    <th><center><a href="/sic115/index.php/">Eliminar</a></center></th>
+                                    <th><center><a href="/tpiencuesta/index.php/eliminarmateriaprofesor/index/<?php echo $_smarty_tpl->tpl_vars['materia']->value['id_detalle_materia_profesor'];?>
+">Eliminar</a></center></th>
                                 </tr>
                                 <?php
 }

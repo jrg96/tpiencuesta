@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-11-16 02:54:38
+/* Smarty version 3.1.30, created on 2017-11-28 02:49:22
   from "H:\tpi\USBWebserver v8.6\root\tpiencuesta\application\views\templates\lista_materias.php" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5a0cfdee9c08e0_43011965',
+  'unifunc' => 'content_5a1cceb2ed0ed6_03801187',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '7ad89ed84baba0999d2bc58d283528c3e2d25b6b' => 
     array (
       0 => 'H:\\tpi\\USBWebserver v8.6\\root\\tpiencuesta\\application\\views\\templates\\lista_materias.php',
-      1 => 1510800876,
+      1 => 1511837362,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5a0cfdee9c08e0_43011965 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a1cceb2ed0ed6_03801187 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -123,9 +123,13 @@ foreach ($_from as $_smarty_tpl->tpl_vars['materia']->value) {
                         
                         <div class="panel-footer no-vertical-padding">
                             <div class="row">
-                                <div class="col-sm-12 side-padding-zero">
+                                <div class="col-sm-6 side-padding-zero">
                                     <a href="/tpiencuesta/index.php/editarmateria/index/<?php echo $_smarty_tpl->tpl_vars['materia']->value['id_materia'];?>
 " class="btn btn-primary btn-block btn-lg no-rounded-corner">Editar materia</a>
+                                </div>
+								<div class="col-sm-6 side-padding-zero">
+                                    <a href="/tpiencuesta/index.php/eliminarmateria/index/<?php echo $_smarty_tpl->tpl_vars['materia']->value['id_materia'];?>
+" class="btn btn-warning btn-block btn-lg no-rounded-corner">Eliminar materia</a>
                                 </div>
                             </div>
                         </div>
